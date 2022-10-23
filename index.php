@@ -1,5 +1,6 @@
 <?php
 include("./include/connexion.php");
+//require("./model/userStory.php");
         // $req="INSERT INTO `apprenant` (`id`, `prenom`, `nom`, `email`, `dobirthday`) 
         // VALUES (NULL, 'fifel', 'Mouad', 'mouad@fmail.com', '2000-01-09');";
         // $insert=$conn->prepare($req); 
@@ -9,7 +10,7 @@ include("./include/connexion.php");
         // }else{
         //     echo '<h1> Error </h1>';
         // }
-    if (isset($_POST['data'])) {
+    /*if (isset($_POST['data'])) {
 
         $req = "SELECT * FROM apprenant";
         $reponse=$conn->query($req);
@@ -17,7 +18,7 @@ include("./include/connexion.php");
         while($user = $reponse->fetch()){
             echo $user['email'].'<br>'; 
         }
-    }
+    }*/
       
   
 ?>
@@ -33,7 +34,16 @@ include("./include/connexion.php");
 <body>
     
     <form action="#" method="post">
-    <button class="btn btn-primary d-flex justify-content-center ml-5" name ="data">Afficher DATA</button>
+	<?php 
+	$i = 10;
+		while($i){
+	?>
+    <button class="btn btn-primary d-flex justify-content-center ml-5" 
+	name ="data">Afficher DATA <?php echo --$i; ?></button>
+	
+	<?php 
+		}
+	?>
     </form>
 </body>
 </html>
