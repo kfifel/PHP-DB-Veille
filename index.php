@@ -35,7 +35,7 @@ include("./include/connexion.php");
     
     <form action="#" method="post">
 	<?php 
-	$i = 10;
+	$i = 2;
 		while($i){
 	?>
     <button class="btn btn-primary d-flex justify-content-center ml-5" 
@@ -44,6 +44,20 @@ include("./include/connexion.php");
 	<?php 
 		}
 	?>
+	<br>
     </form>
 </body>
 </html>
+
+<?php
+    $data = array('khalid', 'fifel');
+
+    $data[] = 'sharp Coders';// ajouter 3 a la fin du tableau
+    $data[] = 00;
+
+    array_push($data, 22, 'good', 'YouCode', 2022);
+    echo "<pre>";
+    print_r($data);
+    echo "</pre>";
+?>
+

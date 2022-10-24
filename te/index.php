@@ -1,33 +1,5 @@
 <?php
 
-    $data = array('khalid', 'fifel', 11);
-
-    $data[] = 'sharp Coders';// ajouter 3 a la fin du tableau
-    $data[] = 99;
-
-    array_push($data, 22, 'good', 'YouCode', 2022);
-
-    print_r($data);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     try {
         $connexion = require 'connect.php';
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
