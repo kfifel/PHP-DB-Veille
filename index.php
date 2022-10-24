@@ -32,7 +32,6 @@ include("./include/connexion.php");
     <title>Youcode</title>
 </head>
 <body>
-    
     <form action="#" method="post">
 	<?php 
 	$i = 2;
@@ -52,12 +51,48 @@ include("./include/connexion.php");
 <?php
     $data = array('khalid', 'fifel');
 
-    $data[] = 'sharp Coders';// ajouter 3 a la fin du tableau
+    $data[] = 'sharp Coders'; // ajouter le mot sharp Coders a la fin du tableau
     $data[] = 00;
 
     array_push($data, 22, 'good', 'YouCode', 2022);
-    echo "<pre>";
-    print_r($data);
-    echo "</pre>";
+
+    print_table($data);
+
+    echo '<hr>';
+
+        $colors = array(1=>"red", "ali"=>"green", 3=>"blue", 4=>"yellow");
+        echo $colors['ali'];
+
+    function print_table($arr){
+        echo "<pre>";
+            print_r($arr);
+        echo "</pre>";
+    }
+
+    function loops(){
+
+        $x = 1;
+
+        while($x <= 5) {
+          echo "The number is: $x <br>";
+          $x++;
+        }
+
+    }
+
+    function foreachLoop(){
+
+        $colors = array("red", "green", "blue", "yellow");
+
+        foreach ($colors as $value) {
+          echo "$value <br>";
+        }
+        //////////////////////////////////////////////////////:
+        $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+        foreach($age as $x => $val) {
+          echo "$x = $val<br>";
+        }
+    }
 ?>
 
