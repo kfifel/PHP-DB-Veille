@@ -32,29 +32,50 @@ include("./include/connexion.php");
     <title>Youcode</title>
 </head>
 <body>
-    <form action="#" method="post">
-	<?php 
-	$i = 2;
-		while($i){
-	?>
-    <button class="btn btn-primary d-flex justify-content-center ml-5" 
-	name ="data">Afficher DATA <?php echo --$i; ?></button>
-	
-	<?php 
-		}
-	?>
-	<br>
-    </form>
+
 </body>
 </html>
 
 <?php
-    $data = array('khalid', 'fifel');
+    /*
+    # variable
+    $nameOfVariable ='value';
+    $age = 22;
+    $nom = "FIFEL";
+
+    echo $nameOfVariable;                           value
+
+    echo '<br>';
+    echo $nom;                                      FIFEl
+
+    echo "<br>";
+    echo "nom est : $nom";                          nom est : FIFEL
+
+    echo "<br>";
+    echo 'nom est : $nom';                          nom est : $nom
+
+    echo "<br>";
+    echo 'nom est :'. $nom;                         nom est : FIFEL
+    */
+
+
+
+
+    /*$data = array('khalid', 'fifel');
 
     $data[] = 'sharp Coders'; // ajouter le mot sharp Coders a la fin du tableau
     $data[] = 00;
 
     array_push($data, 22, 'good', 'YouCode', 2022);
+
+    print_r($data);
+
+    echo "<pre>";
+        print_r($data);
+    echo "</pre>";*/
+
+
+    /*echo '<hr>';
 
     print_table($data);
 
@@ -95,4 +116,27 @@ include("./include/connexion.php");
         }
     }
 ?>
+
+*/
+
+
+
+
+//  This is a single-line comment
+
+#   This is also a single-line comment
+/*
+    This is a multiple-lines comment block
+    that spans over multiple
+lines
+*/
+
+
+    function sayHi(){
+        echo "Hi";
+    }
+    $hi = sayHi();
+
+    $hi();
+
 
